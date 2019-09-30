@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+        
+<style>
+div{ border:solid black 2px;color:blue;};
+</style>
+<meta charset="utf-8">
+        
+<title>Processing a quiz with jQuery</title>
+    
+</head>
+    
+<body>
+
+  
+<center>  
+<h1>JQUERY QUIZ</h1>
+   </center> 
+ 
+<center>
+<table border=0>
+<tr>
+<td><pre><h3 style="align:right;">Your Score Out Of 10 Is :</h3></td><td><h2 id="DEMO" style="align:right;"></h2></pre></td></tr>
+</table></center>
+<form id="quiz-form">
+
+ <h2>QUESTION 1</h2>       
+<label>
+            
+Which of the following elements can you attach jQuery events to? <br>
+<br>           
+ <select id="0">
+                
+<option value="object">object</option>
+                
+<option value="embed">embed</option>
+                
+<option value="applet">applet</option>
+
+<option value="None">None of the above</option>
+             
+</select>
+        
+</label> <br>
+<br>
+<div id="result"></div>
+</br>
+        
+ <h2>QUESTION 2</h2>
+<label>
+            
+Is the following statement true or false?
+jQuery’s event system requires that a DOM element allows attaching data via a property on the element, so that events can be tracked and delivered. <br>
+ <br>          
+ <select id="1">
+                
+<option value="object">false</option>
+                
+<option value="None">true</option>
+             
+</select>
+        
+</label> <br><br>
+<div id="result1"></div>
+
+</br> 
+       
+ <h2>QUESTION 3</h2>
+<label>
+            
+Is the following statement true or false?
+jQuery defines focusin and focusout events which are a cross-browser of the focus and blur events. <br>
+ <br>          
+ <select id="2">
+                
+<option value="None">true</option>
+                
+<option value="object">false</option>
+             
+</select>
+        
+</label> <br>
+
+<br><div id="result2"></div></br>
+        
+
+ <h2>QUESTION 4</h2>
+<label>
+            
+Which code is faster? <br>
+ <br>          
+ <select id="3">
+                
+<option value="None"><pre>$(‘#test1, .test2, .test3, .test4’);</pre></option>
+                
+<option value="object"><pre>$(‘#test1’).add(‘.test2’).add(‘.test3’).add(‘.test4’);</pre></option>
+             
+</select>
+        
+</label> <br>
+ <br>
+<div id="result3"></div>
+</br>
+       
+ <h2>QUESTION 5</h2>
+<label>
+ <pre>           
+$.grep(array1, function1);
+
+The above statement ___ the elements of array1 array which satisfy function1 function.</pre> <br>
+ <br>          
+ <select id="4">
+                
+<option value="object">sorts</option>
+                
+<option value="embed">updates</option>
+                
+<option value="applet">removes</option>
+
+<option value="None">filters</option>
+             
+</select>
+        
+</label> <br>
+ <br>  
+<div id="result4"></div>
+</br>
+     
+ <h2>QUESTION 6</h2>
+<label>
+     <pre>
+Consider the following code snippet:
+
+Items 1
+Items 2
+Items 3
+
+Which of the following code snippets returns the same result as $(‘#id1 li’).not($(‘#li2’));? </pre><br><br>
+           
+ <select id="5">
+                
+<option value="None"><pre>$(‘#li2’).siblings();</pre></option>
+                
+<option value="embed"><pre>$(‘#id2’).siblings(‘#li2’);</pre></option>
+                
+<option value="applet"><pre>$(‘#li2’).children();</pre></option>
+
+<option value="none"><pre>$(‘#id2’).children(‘#li2’);</pre></option>
+             
+</select>
+        
+</label> <br>
+ <br> 
+<div id="result5"></div>
+</br>
+      
+ <h2>QUESTION 7</h2>
+<label>
+            
+The hide() function hides an element by ____.<br>
+<br>           
+ <select id="6">
+                
+<option value="None">setting “display” inline style attribute of that element to “none”.</option>
+                
+<option value="embed">setting “visibility” inline style attribute of that element to “hidden”.</option>
+                
+<option value="applet">setting the horizontal attribute of that element to “-100px” off visible screen.</option>
+
+<option value="mone">setting the vertical attribute of that element to “-100px” off visible screen.</option>
+             
+</select>
+        
+</label> <br>
+ <br>  
+<div id="result6"></div>
+</br>
+
+ <h2>QUESTION 8</h2>     
+<label>
+            
+Which of the following is the correct way to create a div element with a link text “Hello” with jQuery?<br><br>
+           
+ <select id="7">
+                
+<option value="object"><pre>$(“#idName”).create(“div”).text(“Hello“);</pre></option>
+                
+<option value="embed"><pre>$(“#idName”).create(“div”).html(“Hello“);</pre></option>
+                
+<option value="applet"><pre>$(“idName”).css(“div”).html(“Hello“);</pre></option>
+
+<option value="None"><pre>$(“#idName”).append(“Hello“);</pre></option>
+             
+</select>
+        
+</label> <br>
+  <br>          
+<div id="result7"></div></br>
+
+
+ <h2>QUESTION 9</h2>
+<label>
+  <pre>          
+Consider the following code snippet?
+
+function function1()
+{
+alert(arguments.length());
+}
+
+Which of the following is true when you run function1();?
+</pre> <br>
+           
+ <select id="8">
+                
+<option value="object">An error occurs because arguments variable is undefined.</option>
+                
+<option value="embed">The alert box displays <b>undefined</b>.</option>
+                
+<option value="applet">The alert box displays 0.</option>
+
+<option value="None">An error occurs because you call function1 with no arguments.</option>
+             
+</select>
+        
+</label> <br>
+ <br>         
+<div id="result8"></div>
+</br>
+
+ <h2>QUESTION 10</h2>
+<label>
+  <pre>
+$.extend(false, object0, object1, object2);
+
+What does the code above do?
+</pre> <br>
+           
+ <select id="9">
+                
+<option value="object">The statement is invalid because its arguments are invalid.</option>
+                
+<option value="embed">Extends the object1 by merging object0 and object2 with object1.</option>
+                
+<option value="None">Extends the object0 by merging object1 and object2 with object0.</option>
+
+<option value="none">Extends the object2 by merging object0 and object1 with object2.</option>
+             
+</select>
+        
+</label> <br>
+ <br>          
+<div id="result9"></div></br>
+
+<br>
+<center>
+<button type="submit">Check Answer</button>
+
+<button type="reset">Reset</button>
+
+</center>    
+</form>
+ 
+ 
+   
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+<script>
+ 
+ $("#quiz-form").on("submit", function(event) {
+        
+event.preventDefault();
+  
+var c=0;     
+var $answer = $("#0");
+var $answer1 = $("#1"); 
+
+var $answer2 = $("#2"); 
+
+var $answer3 = $("#3"); 
+
+var $answer4 = $("#4"); 
+
+var $answer5 = $("#5"); 
+
+var $answer6 = $("#6"); 
+
+var $answer7 = $("#7"); 
+
+var $answer8 = $("#8"); 
+
+var $answer9 = $("#9"); 
+ 
+ 
+        
+var answer = $answer.val();
+var answer1 = $answer1.val();
+var answer2 = $answer2.val();
+var answer3 = $answer3.val();
+var answer4 = $answer4.val();
+var answer5 = $answer5.val();
+var answer6 = $answer6.val();
+var answer7 = $answer7.val();
+var answer8 = $answer8.val();
+var answer9 = $answer9.val();
+       
+ console.log(answer);
+
+ console.log(answer1);
+
+ console.log(answer2);
+
+ console.log(answer3);
+
+ console.log(answer4);
+
+ console.log(answer5);
+
+ console.log(answer6);
+
+ console.log(answer7);
+
+ console.log(answer8);
+
+ console.log(answer9);
+        
+if (answer === "None") {
+           
+ $("#result").html("<b>Correct Answer</b></br>None of the above.</br>You cannot attach events to object, embed, applet elements. jQuerys event system requires that a DOM element allows attaching data via a property on element.");
+       
+ c++;} 
+else {
+            
+$("#result").text("Try again!");
+        
+}
+        
+    
+
+if (answer1 === "None") {
+           
+ $("#result1").html("<b>Correct Answer</b></br>true.");
+       
+c++; } 
+else {
+            
+$("#result1").text("Try again!");
+        
+}
+   
+     
+    
+if (answer2 === "None") {
+           
+ $("#result2").html("<b>Correct Answer</b></br>true</br><pre>The focus and blur events are specified by the W3C to not bubble, but jQuery defines cross-browser focusin andfocusout events that do bubble. When focus and blur are used to attach delegated event handlers, jQuery maps the names and delivers them as focusin and focusout respectively. For consistency and clarity, use the bubbling event type names.");
+       
+c++; } 
+else {
+            
+$("#result2").text("Try again!");
+        
+}
+        
+    
+
+if (answer3 === "None") {
+           
+ $("#result3").html("<b>Correct Answer</b></br>$(‘#test1, .test2, .test3, .test4’); //faster</br>jsperf: http://jsperf.com/multiple-jquery-id-selects/2</br>API: http://api.jquery.com/add/");
+       
+c++; } 
+else {
+            
+$("#result3").text("Try again!");
+        
+}
+        
+    
+
+if (answer4 === "None") {
+           
+ $("#result4").html("<b>Correct Answer</b></br>filters</br>API: http://api.jquery.com/jQuery.grep/");
+       
+c++; } 
+else {
+            
+$("#result4").text("Try again!");
+        
+}
+        
+ 
+   
+if (answer5 === "None") {
+           
+ $("#result5").html("<b>Correct Answer</b></br>$(‘#li2’).siblings();</br>see answer in action: https://jsfiddle.net/jquery4u/pHtbq/");
+       
+c++; } 
+else {
+            
+$("#result5").text("Try again!");
+        
+}
+        
+    
+if (answer6 === "None") {
+           
+ $("#result6").html("<b>Correct Answer</b></br>setting “display” inline style attribute of that element to “none”.</br>API: http://api.jquery.com/hide/");
+       
+c++; } 
+else {
+            
+$("#result6").text("Try again!");
+        
+}
+        
+    
+if (answer7 === "None") {
+           
+ $("#result7").html("<b>Correct Answer</b></br>$(“#idName”).append(“Hello“);");
+       
+c++; } 
+else {
+            
+$("#result7").text("Try again!");
+        
+}
+        
+    
+if (answer8 === "None") {
+           
+ $("#result8").html("<b>Correct Answer</b></br>An error occurs because you call function1 with no arguments.</br>Uncaught TypeError: Property ‘length’ of object #");
+       
+c++; } 
+else {
+            
+$("#result8").text("Try again!");
+        
+}
+        
+    
+if (answer9 === "None") {
+           
+ $("#result9").html("<b>Correct Answer</b></br>Extends the object0 by merging object1 and object2 with object0.</br>API: http://api.jquery.com/jQuery.extend/");
+       
+c++; } 
+else {
+            
+$("#result9").text("Try again!");
+        
+}
+        
+    
+document .getElementById("DEMO").innerHTML=c;
+});  
+</script>
+    
+</body>
+
+</html>
